@@ -15,8 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/students', 'ApiController@getAllStudents');
-Route::get('/api/students/{id}', 'ApiController@getStudent');
-Route::post('/api/students', 'ApiController@createStudent')->name('student.create');
-Route::put('/api/students/{id}', 'ApiController@updateStudent');
-Route::delete('/api/students/{id}','ApiController@deleteStudent');
+
